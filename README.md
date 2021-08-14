@@ -48,6 +48,8 @@ origin: http://yann.lecun.com/exdb/mnist/
 
 the version provided in this project is cloned from:
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork/tree/master/mnist_dataset
+
+to get full version of MNIST:
 https://pjreddie.com/projects/mnist-in-csv/
 
 Introduction(copied from http://yann.lecun.com/exdb/mnist/):
