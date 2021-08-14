@@ -4,12 +4,14 @@ based on the code shared in the upper repository
 
 
 BRIEF
+
 For the time being, 
 you can train/test/backquery/save/reload your own neural network to distinguishing images;
 you can load defaulted data sets* and apply them in your use.
 
 
 REQUIREMENTs
+
 All of the mentioned functions are fulfilled via Python and depend on multiple Python libraries
 In order to run this project, the following supports are necessitated:
 1. Python 3.6.X/3.7.X/3.8.X/3.9.X/...
@@ -28,6 +30,7 @@ If NVIDIA GPU and CUDA are temporarily unavailable to you, please use CPU-only v
 
 
 DEFAULTED DATA SETs
+
 Two data sets are provided in this project now:
 
 MNIST
@@ -41,6 +44,7 @@ Introduction(copied from http://yann.lecun.com/exdb/mnist/):
 "The MNIST database of handwritten digits, available from this page, has a training set of 60,000 examples, and a test set of 10,000 examples. It is a subset of a larger set available from NIST. The digits have been size-normalized and centered in a fixed-size image."
 
 CC10
+
 A data set created by ME(qwq)
 
 The training set includes 150 samples in total, 
@@ -52,6 +56,7 @@ Charaters: 人 心 永 天 火 寸 古 工 口 女
 
 
 DEVELOPMENT LOG
+
 #UPCOMING 
 Additional Functions
 changeable hidden layer num - different network structure will be allowed
