@@ -1,5 +1,6 @@
 # Handwriting-distinguishing-via-neural-network
 originated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
+
 based on the code shared in the upper repository
 
 
@@ -12,18 +13,26 @@ you can load defaulted data sets* and apply them in your use.
 
 REQUIREMENTs
 
-All of the mentioned functions are fulfilled via Python and depend on multiple Python libraries
+All of the mentioned functions are fulfilled via Python and depend on multiple Python libraries.
+
 In order to run this project, the following supports are necessitated:
 1. Python 3.6.X/3.7.X/3.8.X/3.9.X/...
 2. NVIDIA GPU with late released drive
+  
    ----the performance can fluctuate widely depending on the GPU model you are using
 3. NVIDIA CUDA Toolkit
+   
    ----make sure your CUDA and GPU drive is compatible in version
 4. Python libraries
+   
    ----numpy
+   
    ----scipy
+   
    ----matplotlib
+   
    to use GPU version, this lib is also required
+   
    ----cupy
    
 If NVIDIA GPU and CUDA are temporarily unavailable to you, please use CPU-only version.
@@ -60,21 +69,31 @@ DEVELOPMENT LOG
 
 #UPCOMING 
 
-Additional Functions
+Additional Functions:
+
 changeable hidden layer num - different network structure will be allowed
+
 changeable input layer num - other size of images will be allowed
-Convenience improvement
+
+Convenience improvement:
+
 ----GUI
+
 ----display all saves' name when reloading previous newworks
-Other
+Other:
+
 ----expand CC10 into CC_?_
+
 ----coloured image compat
 
 v0.3
 
 Additional functions:
+
 ----terminal interaction system
+
 ----GPU computing
+
 --------via NVIDIA CUDA & cupy
 Debug:
 ----back activate image saving occasional failure
@@ -82,15 +101,20 @@ Debug:
 v0.2
 
 Additional functions:
+
 ----network saving & reloading
+
 ----back activate image saving
+
 Comments added
+
 Code splited
 
 v0.1
 
 The original network from (c) Tariq Rashid, 2016
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
+
 license is GPLv2
 
 
