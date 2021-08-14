@@ -115,9 +115,6 @@ v0.1
 The original network from (c) Tariq Rashid, 2016
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
 
-license is GPLv2
-
-
 
 
 
