@@ -1,7 +1,5 @@
 # Handwriting-distinguishing-via-neural-network
-originated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
-
-based on the code shared in the upper repository
+more functions generated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
 
 
 BRIEF
