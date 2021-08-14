@@ -34,6 +34,7 @@ DEFAULTED DATA SETs
 Two data sets are provided in this project now:
 
 MNIST
+
 origin: http://yann.lecun.com/exdb/mnist/
 
 the version provided in this project is cloned from:
@@ -58,6 +59,7 @@ Charaters: 人 心 永 天 火 寸 古 工 口 女
 DEVELOPMENT LOG
 
 #UPCOMING 
+
 Additional Functions
 changeable hidden layer num - different network structure will be allowed
 changeable input layer num - other size of images will be allowed
@@ -69,6 +71,7 @@ Other
 ----coloured image compat
 
 v0.3
+
 Additional functions:
 ----terminal interaction system
 ----GPU computing
@@ -77,6 +80,7 @@ Debug:
 ----back activate image saving occasional failure
 
 v0.2
+
 Additional functions:
 ----network saving & reloading
 ----back activate image saving
@@ -84,6 +88,7 @@ Comments added
 Code splited
 
 v0.1
+
 The original network from (c) Tariq Rashid, 2016
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
 license is GPLv2
