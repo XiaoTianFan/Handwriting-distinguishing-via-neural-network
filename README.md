@@ -94,9 +94,12 @@ changeable input layer num - other size of images will be allowed
 
 Convenience improvement:
 
+----MATURE COMMENTS
+
 ----GUI
 
-----display all saves' name when reloading previous newworks
+----display all saves' name when reloading previous newworks  
+
 Other:
 
 ----expand CC10 into CC_?_
