@@ -8,6 +8,7 @@ import data_Initialisation
 import matplotlib.pyplot
 import time
 import random
+import os
 
 
 def networkTrainingProcess(Netname, epochs, training_list):
@@ -210,29 +211,51 @@ to create a new data set, please make sure your data images have been organised 
 
 1. create a fold in ../data/image, name it as your new data set's name
     e.g. ../data/image/mynewdataset
-2. create folds that named as the specific categories your data is going to classified into.
-    e.g. ./mynewdataset/(class1)&(class2)&(class3)
-3. put the images of the same category in the fold they belong to, name the images in order, only INT can be used in images' names
+2. create folds that named as int sequence
+    e.g. ./mynewdataset/(0)&(1)&(2)
+    make sure you can remember the int represent which category in your raw data set
+    the reason of this int-only format is the int fold name will be used as target value(label) of each category directly
+    and it have to be int to fit in the calculation process
+3. make sure all your images are shaped in square 
+    in other words, the pixels number of different sides should conform to each other. 
 
 now, please input your new data set's name:
 (again, you should create a fold in ../data/image before)
 
 ''')
-        # create a new data set from '../data/image/(category)/(label).png'
-        # save iamge datas of each charactor as a single file in the root path
-        #for c in new_data_set_fold_name:
-        #    new_image_data = data_Initialisation.imageArray('C:/Users/z/Desktop/File/Py/neuralNetwork/Handwriting distinguishing/data/img/%s/' % c)
-        #    numpy.savetxt("../charactor_"+c+".csv", new_image_data, delimiter = ',', fmt = '%1.0i')
+        new_data_set_imgsize = int(input('''
+------------------------------------------------------------------------------------- 
+in this case, 'total pixels number' means the result of image_side_pixels^2
+    e.g. the default data sets contain data of images formed in 28p*28p, so the total pixels number will be 784
+
+input the total pixels number in a single image of your new data set:
+
+'''))
+        print('CONFIRMED, check your new data set in root dir')
+        #create a new data set from '../data/image/(category)/(label).png'
+        try:
+            os.mkdir('../tempo')
+        except FileExistsError:
+            pass
+
+        for image_fold_name in os.listdir('../data/image/%s/' % new_data_set_name):
+            new_image_data = data_Initialisation.imageArray('../data/image/' + new_data_set_name + '/%s' % image_fold_name, image_size = new_data_set_imgsize)
+            # save iamge datas of each categories as a single file in the root path
+            numpy.savetxt("../tempo/category_" + image_fold_name + ".csv", new_image_data, delimiter = ',', fmt = '%1.0i')
 
         # mix all the datas randomly and save as one file
-        #record = []
-        #for c in ('人', '心', '永', '天', '火', '寸', '古', '工', '口', '女'):
-        #   for i in numpy.loadtxt("../charactor_"+c+".csv", delimiter = ',', skiprows=0):
-        #        record.append(i)
-        #random.shuffle(record)
-        #numpy.savetxt("../CC10_test.csv", record, delimiter = ',', fmt = '%1.0i')
-        print("sorry, this function haven't been installed yet")
-        continue
+        record = []
+        for j in os.listdir("../tempo/"):
+            record.append(numpy.loadtxt("../tempo/"+j, delimiter = ',', skiprows=0))
+        random.shuffle(record)
+        numpy.savetxt("../"+new_data_set_name+".csv", record, delimiter = ',', fmt = '%1.0i')
+
+        
+        for r in os.listdir('../tempo'):
+            os.remove('../tempo/'+r)
+        os.rmdir('../tempo')
+        
+
     else:
         pass
     
