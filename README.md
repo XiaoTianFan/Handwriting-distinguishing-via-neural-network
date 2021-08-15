@@ -1,10 +1,22 @@
-# Handwriting-distinguishing-via-neural-network
-more functions generated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork  
+# Handwriting-distinguishing-via-neural-network  
+@XiaoTianFan 2021
+
+CONTENT
+-----
+1. BRIEF
+2. REQUIREMENTs
+3. DEFAULT DATA SETs
+4. DEVELOPMENT LOG  
 
 BRIEF  
 ------
-For the time being, 
-you can train/test/backquery/save/reload your own neural network to distinguishing images;
+This is a project that generated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork  
+This project provides more functions in operating the handwriting distinguishing neural newtwork.  
+In order to make it more handy, feasible, convenient, efficient, and instructional.  
+Hope it will be helpful XD~
+
+For the time being,  
+you can create/train/test/backquery/save/reload your own neural network to distinguishing images;  
 you can load defaulted data sets* and apply them in your use.  
 
 REQUIREMENTs
@@ -28,7 +40,8 @@ In order to run this project, ***the following supports are necessitated***:
 
 ----numpy  
 
-----scipy  
+----scipy  version: 1.0.0/0.19.0 and other versions below 1.3.0  
+    this drawback may be solved in future
 
 ----matplotlib
 
@@ -39,7 +52,7 @@ to use GPU version, this lib is also required
 ***If NVIDIA GPU and CUDA are temporarily unavailable to you, please use CPU-only version.***
 
 
-DEFAULTED DATA SETs
+DEFAULT DATA SETs
 -----
 
 Two data sets are provided in this project now:
@@ -50,7 +63,7 @@ origin: http://yann.lecun.com/exdb/mnist/
 the version provided in this project is cloned from:
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork/tree/master/mnist_dataset
 
-to get full version of MNIST:
+to get full version of MNIST:  
 https://pjreddie.com/projects/mnist-in-csv/
 
 Introduction(copied from http://yann.lecun.com/exdb/mnist/):  
@@ -76,7 +89,9 @@ Additional Functions:
 
 changeable hidden layer num - different network structure will be allowed
 
-changeable input layer num - other size of images will be allowed
+changeable input layer num - other size of images will be allowed  
+
+create personal data set  
 
 Convenience improvement:
 
