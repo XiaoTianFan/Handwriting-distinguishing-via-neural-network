@@ -42,7 +42,9 @@ In order to run this project, ***the following supports are necessitated***:
 
 ----scipy  version: any version later then 1.3.0
 
-----matplotlib
+----matplotlib  
+
+----imageio
 
 to use GPU version, this lib is also required  
 
