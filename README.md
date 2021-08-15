@@ -40,8 +40,7 @@ In order to run this project, ***the following supports are necessitated***:
 
 ----numpy  
 
-----scipy  version: 1.0.0/0.19.0 and other versions below 1.3.0  
-    this drawback may be solved in future
+----scipy  version: any version later then 1.3.0
 
 ----matplotlib
 
