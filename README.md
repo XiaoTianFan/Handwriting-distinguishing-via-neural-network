@@ -92,8 +92,6 @@ changeable hidden layer num - different network structure will be allowed
 
 changeable input layer num - other size of images will be allowed  
 
-create personal data set  
-
 Convenience improvement:
 
 ----GUI
@@ -114,6 +112,12 @@ Additional functions:
 ----GPU computing
 
 --------via NVIDIA CUDA & cupy
+
+----personal new data set creation 
+
+----changeable output nodes num
+
+--------now it can be varied to fit in personal data sets
 
 Debug:
 
