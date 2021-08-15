@@ -1,6 +1,7 @@
 # compute by numpy when using CPU computing mode
 import numpy                
 import scipy.misc
+import imageio
 import os
 
 
@@ -29,7 +30,7 @@ def dataArray(file_name, output_node_num):
     return modified_data_list
 
 
-def imageArray(image_file_path, image_group_number = 0, image_size = 784):
+def imageArray(image_file_path, image_group_number=0, image_size=784):
     # create new image list
     image_data_list = []
 
@@ -37,14 +38,14 @@ def imageArray(image_file_path, image_group_number = 0, image_size = 784):
     for image_file_name in os.listdir(image_file_path):
         
         # re-organise image instituion
-        img_array = scipy.misc.imread(image_file_path+'/'+image_file_name, flatten = True)
-        img_data = 255.0 - img_array.reshape(784)
+        img_array = imageio.imread(image_file_path+'/'+image_file_name, as_gray = True)
+        img_data = 255.0 - img_array.reshape(image_size)
 
         # record image label
-        label = int(image_file_name[0])
+        label = int(image_file_path.split('/')[-1])
 
         # append label and image data to test data set
-        record = numpy.append(label,img_data.astype(int))
+        record = numpy.append(label, img_data.astype(int))
         image_data_list.append(record) 
 
         pass
