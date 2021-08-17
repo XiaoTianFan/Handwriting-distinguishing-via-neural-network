@@ -115,4 +115,21 @@ MNIST 数据集介绍(译自 http://yann.lecun.com/exdb/mnist/)：
 
 ----反向激活图像间歇性保存失败
 
+**v0.2**
+
+新功能：  
+
+----神经网络保存&重载
+
+----反向激活图像输出&保存
+
+添加注释
+
+重构代码
+
+v0.1
+
+来自 (c) Tariq Rashid, 2016 的原始程序  
+https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
+
 
