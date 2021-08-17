@@ -1,7 +1,7 @@
 # Handwriting-distinguishing-via-neural-network  
-@XiaoTianFan 2021
-[here](./Chinese-ver/README.md) is the chinese ver
-[这里](./Chinese-ver/README.md) 是中文版文档
+@XiaoTianFan 2021  
+[here](./Chinese-ver/README.md) is the chinese ver  
+[这里](./Chinese-ver/README.md) 是中文版文档  
 
 CONTENT
 -------
