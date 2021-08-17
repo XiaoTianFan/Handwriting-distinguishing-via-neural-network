@@ -127,7 +127,7 @@ MNIST 数据集介绍(译自 http://yann.lecun.com/exdb/mnist/)：
 
 重构代码
 
-v0.1
+**v0.1**
 
 来自 (c) Tariq Rashid, 2016 的原始程序  
 https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork
