@@ -190,9 +190,12 @@ mnist in:784 hid:300 out:10 lr:0.1 e:5
 GPU 186s
 CPU 560s
 
-generally speaking, GPU computing mode will perform better when dealing with bulky data (default GPU)
+generally speaking, GPU computing mode will perform better when dealing with bulky data
+(default GPU)
 
 ''')
+    if computing_method != 'CPU' or computing_method != 'GPU':
+        computing_method = 'GPU'
     #record computing method
     if computing_method == 'GPU':
         computing_method = 'GPU'
@@ -205,6 +208,7 @@ generally speaking, GPU computing mode will perform better when dealing with bul
     if input('''
 -------------------------------------------------------------------------------------    
 do you want to create your own data set or start training with former data set?: create/former
+(default former)
 
 ''') == 'create':
         new_data_set_name = input('''
@@ -265,7 +269,7 @@ input the total pixels number in a single image of your new data set:
     
     # initialise the neural network 
     # set default parameters
-    input_nodes = int(input('''
+    input_nodes = input('''
 -------------------------------------------------------------------------------------
 please start creating a neural network instance by inputing its parameters
 (whether you are going to load a previous network or not, you need to create your network first
@@ -282,10 +286,25 @@ PROMPT: the output_nodes should correspond to the category number of your data s
         in this case, its the product of 28^2,
         as a result, you'd better don't change them, unless you are going to use your own data set
 
-input input__nodes: '''))
-    hidden_nodes = int(input('\ninput hidden__nodes:'))
-    output_nodes = int(input('\ninput output__nodes:'))
-    learning_rate = float(input('\ninput learning_rate: '))
+input input__nodes:  ''')
+    hidden_nodes = input('\ninput hidden__nodes: ')
+    output_nodes = input('\ninput output__nodes: ')
+    learning_rate = input('\ninput learning_rate: ')
+    while True:
+        try:
+            input_nodes = int(input_nodes)
+            hidden_nodes = int(hidden_nodes)
+            output_nodes = int(output_nodes)
+            learning_rate = float(learning_rate)
+            break
+        except:
+            print('''
+input type mismatching
+please input again''')
+            input_nodes   = input('\ninput input__nodes:  ')
+            hidden_nodes  = input('\ninput hidden__nodes: ')
+            output_nodes  = input('\ninput output__nodes: ')
+            learning_rate = input('\ninput learning_rate: ')
 
     # create network instance 
     # Network denominating pattern e.g.            creating time      training times  performance
@@ -293,6 +312,7 @@ input input__nodes: '''))
     if input('''
 -------------------------------------------------------------------------------------    
 do you want to create a new network or load a previous one?: new/previous
+(default previous)
 
 ''') == 'new': 
         if computing_method == 'GPU':
