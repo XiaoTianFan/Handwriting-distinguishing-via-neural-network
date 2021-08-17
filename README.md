@@ -2,14 +2,17 @@
 @XiaoTianFan 2021
 
 CONTENT
------
+-------
 1. BRIEF
 2. REQUIREMENTs
 3. DEFAULT DATA SETs
 4. DEVELOPMENT LOG  
 
 BRIEF  
-------
+-----
+[here](./Chinese-ver/README.md) is the chinese ver
+[这里](./Chinese-ver/README.md) 是中文版文档
+
 This is a project that generated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork  
 This project provides more functions in operating the handwriting distinguishing neural newtwork.  
 In order to make it more handy, feasible, convenient, efficient, and instructional.  
@@ -20,7 +23,7 @@ you can create/train/test/backquery/save/reload your own neural network to disti
 you can load defaulted data sets* and apply them in your use.  
 
 REQUIREMENTs
-------
+------------
 
 All of the mentioned functions are fulfilled via Python and depend on multiple Python libraries.  
 
@@ -54,7 +57,7 @@ to use GPU version, this lib is also required
 
 
 DEFAULT DATA SETs
------
+-----------------
 
 Two data sets are provided in this project now:
 
