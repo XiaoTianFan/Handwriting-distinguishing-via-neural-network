@@ -1,5 +1,7 @@
 # Handwriting-distinguishing-via-neural-network  
-@XiaoTianFan 2021
+@XiaoTianFan 2021  
+[here](./Chinese-ver/README.md) is the chinese ver  
+[这里](./Chinese-ver/README.md) 是中文版文档  
 
 CONTENT
 -------
@@ -10,9 +12,6 @@ CONTENT
 
 BRIEF  
 -----
-[here](./Chinese-ver/README.md) is the chinese ver
-[这里](./Chinese-ver/README.md) 是中文版文档
-
 This is a project that generated from https://github.com/makeyourownneuralnetwork/makeyourownneuralnetwork  
 This project provides more functions in operating the handwriting distinguishing neural newtwork.  
 In order to make it more handy, feasible, convenient, efficient, and instructional.  
