@@ -1,0 +1,9 @@
+.\
+v0.3/data/mnist_test.csv
+v0.3/data/mnist_train.csv
+v0.3/save/Network 2021_08_17_19_18_02/wih.csv
+v0.3/save/Network 2021_08_17_19_18_02/initial_setting.txt
+v0.3/save/Network 2021_08_17_19_18_02/who.csv
+v0.3/core/__pycache__/data_Initialisation.cpython-39.pyc
+v0.3/core/__pycache__/network_Definition_CPU.cpython-39.pyc
+v0.3/core/__pycache__/network_Definition_GPU.cpython-39.pyc
